@@ -1,0 +1,25 @@
+﻿<auiw:ChildWindow  xmlns:auiw="clr-namespace:Autodesk.UI.Windows;assembly=Autodesk.UI.Windows" x:Class="Cust_IFC_Exporter.exportStatusBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cust_IFC_Exporter"
+             mc:Ignorable="d" 
+             Height="Auto" Width="550" ResizeMode="NoResize" SizeToContent="Height" Title="Exporting..." Background="#FFF1F1F1">
+    <StackPanel Orientation="Vertical" Margin="15">
+        <Label x:Name="statusText_Total" Content="{Binding FileInfoText, UpdateSourceTrigger=PropertyChanged, FallbackValue=Preparing for export ....}" Height="37" FontSize="14" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"></Label>
+        <Grid Margin="0,0,0,20">
+            <ProgressBar x:Name="ExportingProgress_Total" Height="30" Background="White" Value="{Binding TotalFileP, UpdateSourceTrigger=PropertyChanged}"></ProgressBar>
+            <TextBlock Text="{Binding TotalFileP, UpdateSourceTrigger=PropertyChanged, StringFormat={}{0:0}%, FallbackValue=0.0%}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Grid>
+        <Label x:Name="statusText_Single" Height="37" FontSize="14" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Collapsed" Content="{Binding ElementInfoText, UpdateSourceTrigger=PropertyChanged}"></Label>
+        <Grid Margin="0,0,0,20">
+            <ProgressBar x:Name="ExportingProgress_Single" Height="30" Background="White" Value="{Binding SingleFileP, UpdateSourceTrigger=PropertyChanged}"></ProgressBar>
+            <TextBlock Text="{Binding SingleFileP, UpdateSourceTrigger=PropertyChanged, StringFormat={}{0:0}%, FallbackValue=0.0%}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Grid>
+        <StackPanel x:Name="horizontalStackPanel" Orientation="Horizontal" HorizontalAlignment="Right" Visibility="Collapsed">
+            <Button x:Name="okButton" Content="Next" Height="30" Width="100" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" Click="okButton_Click"/>
+            <Button x:Name="cancelButton" Content="Cancel" Height="30" Width="100" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" Margin="30,0,0,0" Click="cancelButton_Click"/>
+        </StackPanel>
+    </StackPanel>
+</auiw:ChildWindow>

@@ -1,0 +1,207 @@
+Analytical Openings	OST_AnalyticalOpening
+Analytical Panels	OST_AnalyticalPanel
+Analytical Members	OST_AnalyticalMember
+Analytical Links	OST_LinksAnalytical
+Analytical Nodes	OST_AnalyticalNodes
+Analytical Foundation Slabs	OST_FoundationSlabAnalytical
+Analytical Wall Foundations	OST_WallFoundationAnalytical
+Analytical Isolated Foundations	OST_IsolatedFoundationAnalytical
+Analytical Walls	OST_WallAnalytical
+Analytical Floors	OST_FloorAnalytical
+Analytical Columns	OST_ColumnAnalytical
+Analytical Braces	OST_BraceAnalytical
+Analytical Beams	OST_BeamAnalytical
+Structural Rebar Couplers	OST_Coupler
+Modifiers	OST_StructConnectionModifiers
+Welds	OST_StructConnectionWelds
+Holes	OST_StructConnectionHoles
+Shear Studs	OST_StructConnectionShearStuds
+Others	OST_StructConnectionOthers
+Bolts	OST_StructConnectionBolts
+Anchors	OST_StructConnectionAnchors
+Plates	OST_StructConnectionPlates
+Profiles	OST_StructConnectionProfiles
+Structural Connections	OST_StructConnections
+Fabric Wire	OST_FabricReinforcementWire
+Structural Fabric Areas	OST_FabricAreas
+Structural Fabric Reinforcement	OST_FabricReinforcement
+Rebar Shape	OST_RebarShape
+Structural Path Reinforcement	OST_PathRein
+Structural Area Reinforcement	OST_AreaRein
+Structural Rebar	OST_Rebar
+Plumbing Equipment	OST_PlumbingEquipment
+Mechanical Control Devices	OST_MechanicalControlDevices
+Insulation	OST_FabricationPipeworkInsulation
+Lining	OST_FabricationDuctworkLining
+MEP Fabrication Containment	OST_FabricationContainment
+MEP Fabrication Pipework	OST_FabricationPipework
+MEP Fabrication Hangers	OST_FabricationHangers
+Insulation	OST_FabricationDuctworkInsulation
+MEP Fabrication Ductwork	OST_FabricationDuctwork
+Analytical Surfaces	OST_AnalyticSurfaces
+Analytical Spaces	OST_AnalyticSpaces
+Pipe Placeholders	OST_PlaceHolderPipes
+Duct Placeholders	OST_PlaceHolderDucts
+Cable Tray Runs	OST_CableTrayRun
+Conduit Runs	OST_ConduitRun
+Conduits	OST_Conduit
+Cable Trays	OST_CableTray
+Conduit Fittings	OST_ConduitFitting
+Cable Tray Fittings	OST_CableTrayFitting
+Duct Linings	OST_DuctLinings
+Duct Insulations	OST_DuctInsulations
+Pipe Insulations	OST_PipeInsulations
+HVAC Zones	OST_HVAC_Zones
+Switch System	OST_SwitchSystem
+Sprinklers	OST_Sprinklers
+Lighting Devices	OST_LightingDevices
+Fire Alarm Devices	OST_FireAlarmDevices
+Data Devices	OST_DataDevices
+Communication Devices	OST_CommunicationDevices
+Security Devices	OST_SecurityDevices
+Nurse Call Devices	OST_NurseCallDevices
+Telephone Devices	OST_TelephoneDevices
+Pipe Accessories	OST_PipeAccessory
+Flex Pipes	OST_FlexPipeCurves
+Pipe Fittings	OST_PipeFitting
+Pipes	OST_PipeCurves
+Piping Systems	OST_PipingSystem
+Wires	OST_Wire
+Electrical Circuits	OST_ElectricalCircuit
+Flex Ducts	OST_FlexDuctCurves
+Duct Accessories	OST_DuctAccessory
+Duct Systems	OST_DuctSystem
+Air Terminals	OST_DuctTerminal
+Duct Fittings	OST_DuctFitting
+Ducts	OST_DuctCurves
+Structural Tendons	OST_StructuralTendons
+Expansion Joints	OST_ExpansionJoints
+Vibration Isolators	OST_VibrationIsolators
+Vibration Dampers	OST_VibrationDampers
+Vibration Management	OST_VibrationManagement
+Trusses	OST_BridgeFramingTrusses
+Diaphragms	OST_BridgeFramingDiaphragms
+Cross Bracing	OST_BridgeFramingCrossBracing
+Bridge Framing	OST_BridgeFraming
+Pier Walls	OST_PierWalls
+Pier Piles	OST_PierPiles
+Pier Columns	OST_PierColumns
+Pier Caps	OST_PierCaps
+Approach Slabs	OST_ApproachSlabs
+Abutment Walls	OST_AbutmentWalls
+Abutment Piles	OST_AbutmentPiles
+Abutment Foundations	OST_AbutmentFoundations
+Bearings	OST_BridgeBearings
+Primarys	OST_BridgeGirders
+Pier Foundations	OST_BridgeFoundations
+Bridge Decks	OST_BridgeDecks
+Arches	OST_BridgeArches
+Bridge Cables	OST_BridgeCables
+Pier Towers	OST_BridgeTowers
+Piers	OST_BridgePiers
+Abutments	OST_BridgeAbutments
+Internal Area Loads	OST_InternalAreaLoads
+Internal Line Loads	OST_InternalLineLoads
+Internal Point Loads	OST_InternalPointLoads
+Area Loads	OST_AreaLoads
+Line Loads	OST_LineLoads
+Point Loads	OST_PointLoads
+Spaces	OST_MEPSpaces
+Mass Opening	OST_MassOpening
+Mass Skylight	OST_MassSkylights
+Mass Glazing	OST_MassGlazing
+Mass Roof	OST_MassRoof
+Mass Exterior Wall	OST_MassExteriorWall
+Mass Interior Wall	OST_MassInteriorWall
+Mass Zone	OST_MassZone
+Mass Floor	OST_MassFloor
+Mass	OST_Mass
+Areas	OST_Areas
+Project Information	OST_ProjectInformation
+Sheets	OST_Sheets
+Detail Items	OST_DetailComponents
+Roof Soffits	OST_RoofSoffit
+Slab Edges	OST_EdgeSlab
+Gutters	OST_Gutter
+Fascias	OST_Fascia
+Entourage	OST_Entourage
+Planting	OST_Planting
+Structural Stiffeners	OST_StructuralStiffener
+RVT Links	OST_RvtLinks
+Specialty Equipment	OST_SpecialityEquipment
+Topography	OST_Topography
+Topography Links	OST_TopographyLink
+Structural Trusses	OST_StructuralTruss
+Structural Columns	OST_StructuralColumns
+Structural Beam Systems	OST_StructuralFramingSystem
+Structural Framing	OST_StructuralFraming
+Structural Foundations	OST_StructuralFoundation
+Property Line Segments	OST_SitePropertyLineSegment
+Property Lines	OST_SiteProperty
+Pads	OST_BuildingPad
+Site	OST_Site
+Roads	OST_Roads
+Parking	OST_Parking
+Plumbing Fixtures	OST_PlumbingFixtures
+Mechanical Equipment	OST_MechanicalEquipment
+Lighting Fixtures	OST_LightingFixtures
+Furniture Systems	OST_FurnitureSystems
+Electrical Analytical Transformer	OST_ElectricalAnalyticalTransformer
+Electrical Fixtures	OST_ElectricalFixtures
+Signage	OST_Signage
+Audio Visual Devices	OST_AudioVisualDevices
+Vertical Circulation	OST_VerticalCirculation
+Fire Protection	OST_FireProtection
+Medical Equipment	OST_MedicalEquipment
+Food Service Equipment	OST_FoodServiceEquipment
+Electrical Equipment	OST_ElectricalEquipment
+Temporary Structures	OST_TemporaryStructure
+Hardscape	OST_Hardscape
+Electrical Analytical Power Source	OST_ElectricalPowerSource
+Electrical Load Areas	OST_MEPLoadAreas
+Electrical Analytical Transfer Switch	OST_MEPAnalyticalTransferSwitch
+Electrical Analytical Bus	OST_MEPAnalyticalBus
+Electrical Analytical Loads	OST_ElectricalLoadZoneInstance
+Alignments	OST_Alignments
+Zone Equipment	OST_ZoneEquipment
+Water Loops	OST_MEPAnalyticalWaterLoop
+Air Systems	OST_MEPAnalyticalAirLoop
+System-Zones	OST_MEPSystemZone
+Casework	OST_Casework
+Shaft Openings	OST_ShaftOpening
+Mechanical Equipment Sets	OST_MechanicalEquipmentSet
+Analytical Pipe Connections	OST_AnalyticalPipeConnections
+Terminations	OST_RailingTermination
+Supports	OST_RailingSupport
+Handrails	OST_RailingHandRail
+Top Rails	OST_RailingTopRail
+Landings	OST_StairsLandings
+Runs	OST_StairsRuns
+<Path of Travel Lines>	OST_PathOfTravelLines
+Materials	OST_Materials
+Schedules	OST_Schedules
+Curtain Systems	OST_CurtaSystem
+Views	OST_Views
+Parts	OST_Parts
+Assemblies	OST_Assemblies
+Levels	OST_Levels
+Multi-segmented Grid	OST_GridChains
+Grids	OST_Grids
+Wall Sweeps	OST_Cornices
+Ramps	OST_Ramps
+Curtain Wall Mullions	OST_CurtainWallMullions
+Curtain Panels	OST_CurtainWallPanels
+Rooms	OST_Rooms
+Generic Models	OST_GenericModel
+Railings	OST_StairsRailing
+Supports	OST_StairsStringerCarriage
+Stairs	OST_Stairs
+Columns	OST_Columns
+Model Groups	OST_IOSModelGroups
+Furniture	OST_Furniture
+Ceilings	OST_Ceilings
+Roofs	OST_Roofs
+Floors	OST_Floors
+Doors	OST_Doors
+Windows	OST_Windows
+Walls	OST_Walls

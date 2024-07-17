@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>revitPlugin</Name>
+		<Assembly>Cust_IFC_Exporter.dll</Assembly>
+		<AddInId>
+			A8DD6138-508D-4F66-941E-23677064A3FA
+		</AddInId>
+		<FullClassName>Cust_IFC_Exporter.revitPlugin</FullClassName>
+		<VendorId>Guangyu Rong</VendorId>
+		<VendorDescription>g.rong@uqconnect.edu.au</VendorDescription>
+	</AddIn>
+</RevitAddIns>
+

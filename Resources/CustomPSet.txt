@@ -1,0 +1,22 @@
+PropertySet:	Cpset_MaterialInformation	T	IfcBuildingElement
+	RegionLevel	Text	Cpset_MaterialInformation.RegionLevel[Type]
+	Region	Text	Cpset_MaterialInformation.Region[Type]
+	ID	Text	Type Comments
+
+PropertySet:	Cpset_ChimneyAddQuantities	I	IfcChimney
+	GrossVolume	Real	Volume
+	NetVolume	Real	Volume
+	GrossWeight	Real	Cpset_ChimneyAddQuantities.GrossWeight
+	NetWeight	Real	Cpset_ChimneyAddQuantities.NetWeight
+	
+PropertySet:	Cpset_BuildingElementProxyQuantities	I	IfcBuildingElementProxy
+	GrossVolume	Real	Cpset_BuildingElementProxyQuantities.GrossVolume
+	NetVolume	Real	Cpset_BuildingElementProxyQuantities.NetVolume
+	GrossWeight	Real	Cpset_BuildingElementProxyQuantities.GrossWeight
+	NetWeight	Real	Cpset_BuildingElementProxyQuantities.NetWeight
+
+PropertySet:	Cpset_RailingAddQuantities	I	IfcRailing
+	GrossVolume	Real	Cpset_RailingAddQuantities.GrossVolume
+	NetVolume	Real	Cpset_RailingAddQuantities.NetVolume
+	GrossWeight	Real	Cpset_RailingAddQuantities.GrossWeight
+	NetWeight	Real	Cpset_RailingAddQuantities.NetWeight

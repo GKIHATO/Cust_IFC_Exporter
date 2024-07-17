@@ -1,0 +1,101 @@
+﻿<auiw:ChildWindow  xmlns:auiw="clr-namespace:Autodesk.UI.Windows;assembly=Autodesk.UI.Windows" x:Class="Cust_IFC_Exporter.ChooseFilter"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cust_IFC_Exporter"
+             mc:Ignorable="d" 
+             Title="Please choose filter" Width="590" ResizeMode="NoResize" Height="auto" SizeToContent="Height" Background="#FFF1F1F1" Padding="0,0,5,0" Topmost="True">
+    <StackPanel Margin="10" Width="550" Orientation="Vertical">
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10" Width="550">
+            <Label Content="Operator:" Margin="0,0,10,0"/>
+            <ComboBox x:Name="operator" Width="50" Height="20" Margin="0,0,330,0" SelectionChanged="operator_SelectionChanged">
+                <ComboBoxItem Content="and"></ComboBoxItem>
+                <ComboBoxItem Content="or"></ComboBoxItem>
+            </ComboBox>
+            <Button ToolTip="Clear all filters and show all records" Content="Reset" Width="75" Height="20" Click="ResetButton_Click"></Button>
+        </StackPanel>
+        <TabControl x:Name="Tab" Width="550">
+            <TabItem Header="Filter By Elements">
+                <StackPanel Orientation="Vertical">
+                    <ListView VirtualizingStackPanel.IsVirtualizing="False" x:Name="IfcIdFilter" Background="White" HorizontalAlignment="Left" SelectionMode="Single" BorderBrush="Transparent" Margin="0,0,15,15" Width="535" Height="430">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <CheckBox Content="{Binding Name}" IsChecked="{Binding IsSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Checked="CheckBox_Checked_1" Unchecked="CheckBox_Unchecked_1"></CheckBox>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,10,10">
+                        <Button x:Name="Ele_Apply" Content="Apply Filter" Width="100" Margin="0,0,20,0" Click="ApplyFilter" Background="#FFDDDDDD" ToolTip="Apply current filter"></Button>
+                        <Button x:Name="Ele_Clear" Content="Clear Filter" Width="100" Click="ClearFilter" ToolTip="Clear current filter"></Button>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Filter By IFC Type">
+                <StackPanel Orientation="Vertical" VirtualizingPanel.IsVirtualizing="False">
+                    <ListView VirtualizingStackPanel.IsVirtualizing="False" x:Name="IfcTypeFilter" Background="White" HorizontalAlignment="Left" SelectionMode="Single" BorderBrush="Transparent" Margin="0,0,15,15" Width="535" Height="430">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <CheckBox Content="{Binding Name}" IsChecked="{Binding IsSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Checked="CheckBox_Checked_2" Unchecked="CheckBox_Unchecked_2"></CheckBox>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,10,10">
+                        <Button x:Name="Type_Apply" Content="Apply Filter" Width="100" Margin="0,0,20,0" Click="ApplyFilter" ToolTip="Apply current filter"></Button>
+                        <Button x:Name="Type_Clear" Content="Clear Filter" Width="100" Click="ClearFilter" ToolTip="Clear current filter"></Button>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Filter By ConceptRoot">
+                <StackPanel Orientation="Vertical">
+                    <ListView VirtualizingStackPanel.IsVirtualizing="False" x:Name="ConceptRootFilter" Background="White" HorizontalAlignment="Left" SelectionMode="Single" BorderBrush="Transparent" Margin="0,0,15,15" Width="535" Height="430">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <CheckBox Content="{Binding Name}" IsChecked="{Binding IsSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Checked="CheckBox_Checked_3" Unchecked="CheckBox_Unchecked_3"></CheckBox>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,10,10">
+                        <Button x:Name="Root_Apply" Content="Apply Filter" Width="100" Margin="0,0,20,0" Click="ApplyFilter" ToolTip="Apply current filter"></Button>
+                        <Button x:Name="Root_Clear" Content="Clear Filter" Width="100" Click="ClearFilter" ToolTip="Clear current filter"></Button>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Filter By Concept">
+                <StackPanel Orientation="Vertical">
+                    <ListView VirtualizingStackPanel.IsVirtualizing="False" x:Name="ConceptFilter" Background="White" HorizontalAlignment="Left" SelectionMode="Single" BorderBrush="Transparent" Margin="0,0,15,15" Width="535" Height="430">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <CheckBox Content="{Binding Name}" IsChecked="{Binding IsSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Checked="CheckBox_Checked_4" Unchecked="CheckBox_Unchecked_4"></CheckBox>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,10,10">
+                        <Button x:Name="Concept_Apply" Content="Apply Filter" Width="100" Margin="0,0,20,0" Click="ApplyFilter" ToolTip="Apply current filter"></Button>
+                        <Button x:Name="Concept_Clear" Content="Clear Filter" Width="100" Click="ClearFilter" ToolTip="Clear current filter"></Button>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Filter By Result">
+                <StackPanel Orientation="Vertical">
+                    <ListView VirtualizingStackPanel.IsVirtualizing="False" x:Name="ResultFilter" Background="White" HorizontalAlignment="Left" SelectionMode="Single" BorderBrush="Transparent" Margin="0,0,15,15" Width="535" Height="430">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <CheckBox Content="{Binding Name}" IsChecked="{Binding IsSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Checked="CheckBox_Checked_5" Unchecked="CheckBox_Unchecked_5"/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,10,10">
+                        <Button x:Name="Result_Apply" Content="Apply Filter" Width="100" Margin="0,0,20,0" Click="ApplyFilter" ToolTip="Apply current filter"/>
+                        <Button x:Name="Result_Clear" Content="Clear Filter" Width="100" Click="ClearFilter" ToolTip="Clear current filter"/>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+        <!--     <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="OK" Width="100" Margin="0,0,20,0" Click="OKButton_Click"></Button>
+            <Button Content="Cancel" Width="100" Click="CancelButton_Click"></Button>
+        </StackPanel>  
+-->
+    </StackPanel>
+</auiw:ChildWindow>
